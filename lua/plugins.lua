@@ -86,9 +86,32 @@ return {
       require("telescope").setup{}
     end
     },
-  {
-    'ryanoasis/vim-devicons'
-  },
+    {
+      "ThePrimeagen/harpoon",
+      branch = "harpoon2",
+      dependencies = { "nvim-lua/plenary.nvim" }
+    },
+    {
+      'akinsho/bufferline.nvim', version = "*",
+       dependencies = 'nvim-tree/nvim-web-devicons',
+       config = function ()
+       local bufferline = require("bufferline")
+        bufferline.setup{
+         options = {
+            style_preset = {
+                bufferline.style_preset.no_italic,
+                bufferline.style_preset.no_bold
+            },
+          },
+          highlights = {
+            fill = {
+              bg = "#0f172a"
+            },
+          }
+        }
+       end
+    },
+
   {
     'nvim-lualine/lualine.nvim',
      dependencies = { 'nvim-tree/nvim-web-devicons' },
