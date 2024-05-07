@@ -68,10 +68,24 @@ return {
       require('nvim-ts-autotag').setup()
     end
   },
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+        require("nvim-autopairs").setup {}
+    end
+  },
 
   {
     "EdenEast/nightfox.nvim"
   },
+    {
+    'nvim-telescope/telescope.nvim', tag = '0.1.6',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function ()
+      require("telescope").setup{}
+    end
+    },
   {
     'ryanoasis/vim-devicons'
   },
