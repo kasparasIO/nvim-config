@@ -72,4 +72,14 @@ return {
   {
     "EdenEast/nightfox.nvim"
   },
+  {
+    'ryanoasis/vim-devicons'
+  },
+  {
+    'nvim-lualine/lualine.nvim',
+     dependencies = { 'nvim-tree/nvim-web-devicons' },
+     config = function ()
+      require("lualine").setup({})
+     end
+   },
 }

@@ -6,3 +6,4 @@ vim.bo.softtabstop = 2
 --numbers
 vim.opt.number = true
 vim.opt.numberwidth = 3
+
