@@ -44,7 +44,11 @@ return {
       require("config.lspconfig")
     end,
   },
-
+  {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    opts = {},
+  },
   {
     "L3MON4D3/LuaSnip",
     version = "v2.3.0",

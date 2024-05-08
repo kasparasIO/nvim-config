@@ -1,4 +1,4 @@
-local conf = require("telescope.config").values
+local conf =require("telescope.config").values
 local function toggle_telescope(harpoon_files)
     local file_paths = {}
     for _, item in ipairs(harpoon_files.items) do
